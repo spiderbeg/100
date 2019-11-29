@@ -16,9 +16,10 @@ def getPrimeTable(n):
     return pt
  
 pt = getPrimeTable(900)
-for p in range(10, 900):
+print(len(pt))
+for p in range(2, 900):
     if not pt[p]: continue
     q = int(str(p)[::-1])
-    if p != q < 900 and pt[q]:
+    if q < 900 and pt[q]:
         pt[q] = False 
         print (p, q)
