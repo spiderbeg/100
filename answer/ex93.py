@@ -2,7 +2,7 @@ import math
 def isPrimeNumber(num):
     i = 2
     x = math.sqrt(num)
-    while i < x:
+    while i <= x:
         if num%i == 0:
             return False
         i += 1
